@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		814E9CCD16F766AB00E1F63D /* Background V2.png in Resources */ = {isa = PBXBuildFile; fileRef = 814E9CCC16F766AB00E1F63D /* Background V2.png */; };
+		814E9CD016F7692900E1F63D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 814E9CCE16F7692900E1F63D /* MainStoryboard.storyboard */; };
+		814E9CD216F76A1C00E1F63D /* Background V2 NEW.png in Resources */ = {isa = PBXBuildFile; fileRef = 814E9CD116F76A1C00E1F63D /* Background V2 NEW.png */; };
+		8189E24316F8D56300099AE6 /* Background V3.png in Resources */ = {isa = PBXBuildFile; fileRef = 8189E24216F8D56300099AE6 /* Background V3.png */; };
+		8189E24516F8DAC700099AE6 /* Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8189E24416F8DAC700099AE6 /* Button.png */; };
 		819B437A16F6F9EF009500D7 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 819B437916F6F9EF009500D7 /* Background.png */; };
 		81C9A46C16F6BFA9001ACB58 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81C9A46B16F6BFA9001ACB58 /* UIKit.framework */; };
 		81C9A46E16F6BFA9001ACB58 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81C9A46D16F6BFA9001ACB58 /* Foundation.framework */; };
@@ -17,11 +22,15 @@
 		81C9A47E16F6BFA9001ACB58 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 81C9A47D16F6BFA9001ACB58 /* Default.png */; };
 		81C9A48016F6BFA9001ACB58 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 81C9A47F16F6BFA9001ACB58 /* Default@2x.png */; };
 		81C9A48216F6BFA9001ACB58 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 81C9A48116F6BFA9001ACB58 /* Default-568h@2x.png */; };
-		81C9A48516F6BFA9001ACB58 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81C9A48316F6BFA9001ACB58 /* MainStoryboard.storyboard */; };
 		81C9A48816F6BFA9001ACB58 /* FlipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C9A48716F6BFA9001ACB58 /* FlipViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		814E9CCC16F766AB00E1F63D /* Background V2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background V2.png"; sourceTree = "<group>"; };
+		814E9CCF16F7692900E1F63D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		814E9CD116F76A1C00E1F63D /* Background V2 NEW.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background V2 NEW.png"; sourceTree = "<group>"; };
+		8189E24216F8D56300099AE6 /* Background V3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background V3.png"; sourceTree = "<group>"; };
+		8189E24416F8DAC700099AE6 /* Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button.png; sourceTree = "<group>"; };
 		819B437916F6F9EF009500D7 /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
 		81C9A46816F6BFA9001ACB58 /* PhoneFlip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhoneFlip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81C9A46B16F6BFA9001ACB58 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -36,7 +45,6 @@
 		81C9A47D16F6BFA9001ACB58 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		81C9A47F16F6BFA9001ACB58 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		81C9A48116F6BFA9001ACB58 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		81C9A48416F6BFA9001ACB58 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		81C9A48616F6BFA9001ACB58 /* FlipViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlipViewController.h; sourceTree = "<group>"; };
 		81C9A48716F6BFA9001ACB58 /* FlipViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,8 +95,10 @@
 			children = (
 				81C9A47A16F6BFA9001ACB58 /* FlipAppDelegate.h */,
 				81C9A47B16F6BFA9001ACB58 /* FlipAppDelegate.m */,
-				81C9A48316F6BFA9001ACB58 /* MainStoryboard.storyboard */,
-				819B437916F6F9EF009500D7 /* Background.png */,
+				814E9CCE16F7692900E1F63D /* MainStoryboard.storyboard */,
+				8189E24416F8DAC700099AE6 /* Button.png */,
+				8189E24216F8D56300099AE6 /* Background V3.png */,
+				814E9CD116F76A1C00E1F63D /* Background V2 NEW.png */,
 				81C9A48616F6BFA9001ACB58 /* FlipViewController.h */,
 				81C9A48716F6BFA9001ACB58 /* FlipViewController.m */,
 				81C9A47216F6BFA9001ACB58 /* Supporting Files */,
@@ -99,6 +109,8 @@
 		81C9A47216F6BFA9001ACB58 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				814E9CCC16F766AB00E1F63D /* Background V2.png */,
+				819B437916F6F9EF009500D7 /* Background.png */,
 				81C9A47316F6BFA9001ACB58 /* PhoneFlip-Info.plist */,
 				81C9A47416F6BFA9001ACB58 /* InfoPlist.strings */,
 				81C9A47716F6BFA9001ACB58 /* main.m */,
@@ -166,8 +178,12 @@
 				81C9A47E16F6BFA9001ACB58 /* Default.png in Resources */,
 				81C9A48016F6BFA9001ACB58 /* Default@2x.png in Resources */,
 				81C9A48216F6BFA9001ACB58 /* Default-568h@2x.png in Resources */,
-				81C9A48516F6BFA9001ACB58 /* MainStoryboard.storyboard in Resources */,
 				819B437A16F6F9EF009500D7 /* Background.png in Resources */,
+				814E9CCD16F766AB00E1F63D /* Background V2.png in Resources */,
+				814E9CD016F7692900E1F63D /* MainStoryboard.storyboard in Resources */,
+				814E9CD216F76A1C00E1F63D /* Background V2 NEW.png in Resources */,
+				8189E24316F8D56300099AE6 /* Background V3.png in Resources */,
+				8189E24516F8DAC700099AE6 /* Button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,20 +203,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		814E9CCE16F7692900E1F63D /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				814E9CCF16F7692900E1F63D /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
 		81C9A47416F6BFA9001ACB58 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				81C9A47516F6BFA9001ACB58 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		81C9A48316F6BFA9001ACB58 /* MainStoryboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				81C9A48416F6BFA9001ACB58 /* en */,
-			);
-			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
