@@ -21,8 +21,8 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UEN-xN-Syq">
                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="20"/>
                                 <color key="tintColor" red="0.094117656349999995" green="0.1411764771" blue="0.48235297199999999" alpha="1" colorSpace="deviceRGB"/>
-                                <state key="normal" title="Play" backgroundImage="Button.png">
-                                    <color key="titleColor" red="0.99607849120000003" green="0.99215692280000001" blue="0.99215692280000001" alpha="1" colorSpace="deviceRGB"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" red="0.023529414087533951" green="0.0039215688593685627" blue="0.0039215688593685627" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -34,8 +34,8 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fGC-c2-oQE">
                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="20"/>
-                                <state key="normal" title="Scores" backgroundImage="Button.png">
-                                    <color key="titleColor" red="0.99607849120000003" green="0.99215692280000001" blue="0.99215692280000001" alpha="1" colorSpace="deviceRGB"/>
+                                <state key="normal" title="Scores">
+                                    <color key="titleColor" red="0.023529414087533951" green="0.0039215688593685627" blue="0.0039215688593685627" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -47,8 +47,8 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R1f-uP-kcD">
                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="20"/>
-                                <state key="normal" title="Options" backgroundImage="Button.png">
-                                    <color key="titleColor" red="0.9960784912109375" green="0.99215692281723022" blue="0.99215692281723022" alpha="1" colorSpace="deviceRGB"/>
+                                <state key="normal" title="Options">
+                                    <color key="titleColor" red="0.023529414087533951" green="0.0039215688593685627" blue="0.0039215688593685627" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -75,14 +75,14 @@
                             <constraint firstItem="UEN-xN-Syq" firstAttribute="centerX" secondItem="Im4-hg-q2I" secondAttribute="centerX" type="default" id="4tL-x3-s7w"/>
                             <constraint firstItem="fGC-c2-oQE" firstAttribute="leading" secondItem="G1h-bQ-A7g" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="9lI-nq-FVc"/>
                             <constraint firstItem="f7p-Sv-flF" firstAttribute="top" secondItem="G1h-bQ-A7g" secondAttribute="top" constant="45" id="AQV-PS-kJq"/>
+                            <constraint firstAttribute="bottom" secondItem="R1f-uP-kcD" secondAttribute="bottom" constant="15" id="C25-op-Krn"/>
                             <constraint firstItem="UEN-xN-Syq" firstAttribute="leading" secondItem="G1h-bQ-A7g" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Doz-yZ-Wim"/>
                             <constraint firstItem="f7p-Sv-flF" firstAttribute="centerX" secondItem="UEN-xN-Syq" secondAttribute="centerX" type="default" id="EOQ-8G-FeT"/>
                             <constraint firstAttribute="trailing" secondItem="UEN-xN-Syq" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Iok-wh-ozO"/>
-                            <constraint firstAttribute="bottom" secondItem="UEN-xN-Syq" secondAttribute="bottom" constant="126" id="Ji9-i4-sFI"/>
+                            <constraint firstAttribute="bottom" secondItem="fGC-c2-oQE" secondAttribute="bottom" constant="71" id="LYM-4M-GCT"/>
                             <constraint firstAttribute="trailing" secondItem="fGC-c2-oQE" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Mrt-yo-Lhf"/>
-                            <constraint firstAttribute="bottom" secondItem="R1f-uP-kcD" secondAttribute="bottom" constant="14" id="Rxx-ZO-W5e"/>
                             <constraint firstAttribute="trailing" secondItem="R1f-uP-kcD" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="UUe-RZ-AwT"/>
-                            <constraint firstAttribute="bottom" secondItem="fGC-c2-oQE" secondAttribute="bottom" constant="70" id="ima-j6-wh3"/>
+                            <constraint firstAttribute="bottom" secondItem="UEN-xN-Syq" secondAttribute="bottom" constant="127" id="m0S-3S-fw6"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Phone Flip" id="svk-Fv-dDj"/>
@@ -330,7 +330,6 @@
                             <constraint firstItem="Tla-HW-A3G" firstAttribute="top" secondItem="pqT-Zn-etH" secondAttribute="top" constant="-284" id="KoX-qc-t5h"/>
                             <constraint firstAttribute="bottom" secondItem="8Ct-We-hM9" secondAttribute="bottom" constant="136" id="LR9-zl-vRG"/>
                             <constraint firstItem="U0S-bs-pY7" firstAttribute="top" secondItem="pqT-Zn-etH" secondAttribute="top" constant="35" id="Lrf-8l-7li"/>
-                            <constraint firstItem="tBB-7v-M6e" firstAttribute="baseline" secondItem="QTA-LP-uZc" secondAttribute="baseline" type="default" id="Nkf-co-mUm"/>
                             <constraint firstItem="SKm-Pj-891" firstAttribute="top" secondItem="pqT-Zn-etH" secondAttribute="top" constant="126" id="Nqf-du-jAg"/>
                             <constraint firstItem="8Ct-We-hM9" firstAttribute="centerX" secondItem="yOv-YJ-fjc" secondAttribute="centerX" type="default" id="SdW-s2-Y9X"/>
                             <constraint firstItem="SKm-Pj-891" firstAttribute="centerX" secondItem="pqT-Zn-etH" secondAttribute="centerX" type="default" id="Slj-OW-fJz"/>
