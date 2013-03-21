@@ -11,7 +11,6 @@
 @interface FlipAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-@property (strong, nonatomic) UIViewController *menu;
 
 
 @end
