@@ -15,6 +15,7 @@
 		8189E24316F8D56300099AE6 /* Background V3.png in Resources */ = {isa = PBXBuildFile; fileRef = 8189E24216F8D56300099AE6 /* Background V3.png */; };
 		8189E24516F8DAC700099AE6 /* Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8189E24416F8DAC700099AE6 /* Button.png */; };
 		819B437A16F6F9EF009500D7 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 819B437916F6F9EF009500D7 /* Background.png */; };
+		819B766C16FB867A0031F215 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 819B766B16FB867A0031F215 /* MenuViewController.m */; };
 		81C9A46C16F6BFA9001ACB58 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81C9A46B16F6BFA9001ACB58 /* UIKit.framework */; };
 		81C9A46E16F6BFA9001ACB58 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81C9A46D16F6BFA9001ACB58 /* Foundation.framework */; };
 		81C9A47016F6BFA9001ACB58 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81C9A46F16F6BFA9001ACB58 /* CoreGraphics.framework */; };
@@ -36,6 +37,8 @@
 		8189E24216F8D56300099AE6 /* Background V3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background V3.png"; sourceTree = "<group>"; };
 		8189E24416F8DAC700099AE6 /* Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button.png; sourceTree = "<group>"; };
 		819B437916F6F9EF009500D7 /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
+		819B766A16FB867A0031F215 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		819B766B16FB867A0031F215 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		81C9A46816F6BFA9001ACB58 /* PhoneFlip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhoneFlip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81C9A46B16F6BFA9001ACB58 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		81C9A46D16F6BFA9001ACB58 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -100,6 +103,8 @@
 				81C9A47A16F6BFA9001ACB58 /* FlipAppDelegate.h */,
 				81C9A47B16F6BFA9001ACB58 /* FlipAppDelegate.m */,
 				814E9CCE16F7692900E1F63D /* MainStoryboard.storyboard */,
+				819B766A16FB867A0031F215 /* MenuViewController.h */,
+				819B766B16FB867A0031F215 /* MenuViewController.m */,
 				81C9A48616F6BFA9001ACB58 /* FlipViewController.h */,
 				81C9A48716F6BFA9001ACB58 /* FlipViewController.m */,
 				81C9A47216F6BFA9001ACB58 /* Supporting Files */,
@@ -205,6 +210,7 @@
 				81C9A47816F6BFA9001ACB58 /* main.m in Sources */,
 				81C9A47C16F6BFA9001ACB58 /* FlipAppDelegate.m in Sources */,
 				81C9A48816F6BFA9001ACB58 /* FlipViewController.m in Sources */,
+				819B766C16FB867A0031F215 /* MenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

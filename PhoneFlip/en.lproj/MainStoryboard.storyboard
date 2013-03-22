@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--View Controller - Menu-->
+        <!--Menu View Controller - Menu-->
         <scene sceneID="xxN-Sv-qD2">
             <objects>
-                <viewController title="Menu" id="DqU-0i-16N" sceneMemberID="viewController">
+                <viewController title="Menu" id="DqU-0i-16N" customClass="MenuViewController" sceneMemberID="viewController">
                     <view key="view" opaque="NO" contentMode="scaleToFill" id="G1h-bQ-A7g">
                         <rect key="frame" x="0.0" y="44" width="320" height="436"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -18,11 +18,14 @@
                                     <constraint firstAttribute="width" constant="640" id="hyV-Ho-suO"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UEN-xN-Syq">
-                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="20"/>
-                                <color key="tintColor" red="0.094117656349999995" green="0.1411764771" blue="0.48235297199999999" alpha="1" colorSpace="deviceRGB"/>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UEN-xN-Syq">
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="cke-4F-fjw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal" title="Play">
-                                    <color key="titleColor" red="0.023529414087533951" green="0.0039215688593685627" blue="0.0039215688593685627" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -32,10 +35,14 @@
                                     <segue destination="X3a-wZ-Syu" kind="push" id="9dq-Zw-TNF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fGC-c2-oQE">
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fGC-c2-oQE">
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="80A-j2-hUK"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="20"/>
                                 <state key="normal" title="Scores">
-                                    <color key="titleColor" red="0.023529414087533951" green="0.0039215688593685627" blue="0.0039215688593685627" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -45,10 +52,14 @@
                                     <segue destination="vkE-Rp-hsd" kind="push" id="a6Y-mc-IpA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R1f-uP-kcD">
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R1f-uP-kcD">
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="GTu-dJ-cZZ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="20"/>
                                 <state key="normal" title="Options">
-                                    <color key="titleColor" red="0.023529414087533951" green="0.0039215688593685627" blue="0.0039215688593685627" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -72,20 +83,25 @@
                         <constraints>
                             <constraint firstItem="Im4-hg-q2I" firstAttribute="top" secondItem="G1h-bQ-A7g" secondAttribute="top" constant="-284" id="0OJ-AG-Cjv"/>
                             <constraint firstItem="R1f-uP-kcD" firstAttribute="leading" secondItem="G1h-bQ-A7g" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="3Hy-Fw-qAV"/>
-                            <constraint firstItem="UEN-xN-Syq" firstAttribute="centerX" secondItem="Im4-hg-q2I" secondAttribute="centerX" type="default" id="4tL-x3-s7w"/>
                             <constraint firstItem="fGC-c2-oQE" firstAttribute="leading" secondItem="G1h-bQ-A7g" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="9lI-nq-FVc"/>
                             <constraint firstItem="f7p-Sv-flF" firstAttribute="top" secondItem="G1h-bQ-A7g" secondAttribute="top" constant="45" id="AQV-PS-kJq"/>
-                            <constraint firstAttribute="bottom" secondItem="R1f-uP-kcD" secondAttribute="bottom" constant="15" id="C25-op-Krn"/>
                             <constraint firstItem="UEN-xN-Syq" firstAttribute="leading" secondItem="G1h-bQ-A7g" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Doz-yZ-Wim"/>
                             <constraint firstItem="f7p-Sv-flF" firstAttribute="centerX" secondItem="UEN-xN-Syq" secondAttribute="centerX" type="default" id="EOQ-8G-FeT"/>
                             <constraint firstAttribute="trailing" secondItem="UEN-xN-Syq" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Iok-wh-ozO"/>
-                            <constraint firstAttribute="bottom" secondItem="fGC-c2-oQE" secondAttribute="bottom" constant="71" id="LYM-4M-GCT"/>
                             <constraint firstAttribute="trailing" secondItem="fGC-c2-oQE" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Mrt-yo-Lhf"/>
+                            <constraint firstItem="fGC-c2-oQE" firstAttribute="top" secondItem="UEN-xN-Syq" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Nw4-sK-AZL"/>
                             <constraint firstAttribute="trailing" secondItem="R1f-uP-kcD" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="UUe-RZ-AwT"/>
-                            <constraint firstAttribute="bottom" secondItem="UEN-xN-Syq" secondAttribute="bottom" constant="127" id="m0S-3S-fw6"/>
+                            <constraint firstItem="R1f-uP-kcD" firstAttribute="top" secondItem="fGC-c2-oQE" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Zy6-lj-73G"/>
+                            <constraint firstAttribute="bottom" secondItem="R1f-uP-kcD" secondAttribute="bottom" constant="25" id="ovy-RZ-cQZ"/>
+                            <constraint firstItem="R1f-uP-kcD" firstAttribute="centerX" secondItem="Im4-hg-q2I" secondAttribute="centerX" type="default" id="z9M-5e-Km9"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Phone Flip" id="svk-Fv-dDj"/>
+                    <connections>
+                        <outlet property="optionsMenuButton" destination="R1f-uP-kcD" id="xfV-1t-Pdp"/>
+                        <outlet property="playMenuButton" destination="UEN-xN-Syq" id="tJp-P6-cRT"/>
+                        <outlet property="scoresMenuButton" destination="fGC-c2-oQE" id="4C4-u5-blp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x4c-gB-nh8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -226,7 +242,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bx4-dD-7st" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-647" y="-85"/>
+            <point key="canvasLocation" x="-593" y="-85"/>
         </scene>
         <!--View Controller - Play-->
         <scene sceneID="TIp-Jz-kUo">
@@ -242,13 +258,14 @@
                                     <constraint firstAttribute="width" constant="640" id="Xfe-bO-k8x"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0S-bs-pY7">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0S-bs-pY7">
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="283" id="3OR-Pq-vtN"/>
                                     <constraint firstAttribute="height" constant="40" id="iCW-Zo-Nr3"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
-                                <state key="normal" title="Go" backgroundImage="Button.png">
+                                <state key="normal" title="Go">
                                     <color key="titleColor" red="0.9960784912109375" green="0.99215692281723022" blue="0.99215692281723022" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -292,13 +309,14 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QTA-LP-uZc">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QTA-LP-uZc">
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="C7S-8C-pRv"/>
-                                    <constraint firstAttribute="width" constant="140" id="uPn-6B-hwa"/>
+                                    <constraint firstAttribute="width" constant="140" id="Ikt-9C-D8U"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="13"/>
-                                <state key="normal" title="Share to Facebook" backgroundImage="Button.png">
+                                <state key="normal" title="Share to Facebook">
                                     <color key="titleColor" red="0.99607849120000003" green="0.99215692280000001" blue="0.99215692280000001" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -306,12 +324,13 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tBB-7v-M6e">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tBB-7v-M6e">
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="130" id="W4Q-F9-KP2"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="13"/>
-                                <state key="normal" title="Share to Twitter" backgroundImage="Button.png">
+                                <state key="normal" title="Share to Twitter">
                                     <color key="titleColor" red="0.99607849120000003" green="0.99215692280000001" blue="0.99215692280000001" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -380,6 +399,14 @@
         <image name="Button.png" width="140" height="22"/>
     </resources>
     <classes>
+        <class className="MenuViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MenuViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="optionsMenuButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="playMenuButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="scoresMenuButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
         </class>
