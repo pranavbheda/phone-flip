@@ -1,23 +1,111 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--Flip View Controller-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="FlipViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="[]" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLZ-7K-aYT">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="0Eg-AI-pO8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="[]" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0YC-KC-7qA">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="7HR-XY-Iq3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="[]" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIZ-R3-YTK">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="GzC-qv-Qtw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Spins: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NNt-rp-H2C">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="190" id="Lic-Sv-W52"/>
+                                    <constraint firstAttribute="height" constant="48" id="p6Z-c1-i1N"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" red="0.0" green="0.72826086960000003" blue="0.097086064070000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Roll:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dla-hr-1u0">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Pitch:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zaa-J2-fcM">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Yaw:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEY-1F-k1d">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Zaa-J2-fcM" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="1XI-6s-f8a"/>
+                            <constraint firstItem="YLZ-7K-aYT" firstAttribute="top" secondItem="dla-hr-1u0" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="1v1-Jv-QLj"/>
+                            <constraint firstItem="zEY-1F-k1d" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="3mN-3y-F1d"/>
+                            <constraint firstItem="VIZ-R3-YTK" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="9of-nJ-apP"/>
+                            <constraint firstAttribute="bottom" secondItem="NNt-rp-H2C" secondAttribute="bottom" constant="65" id="AUN-md-BFm"/>
+                            <constraint firstAttribute="trailing" secondItem="YLZ-7K-aYT" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="C6W-Wq-gPE"/>
+                            <constraint firstAttribute="trailing" secondItem="0YC-KC-7qA" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="HlK-vL-TH7"/>
+                            <constraint firstItem="0YC-KC-7qA" firstAttribute="top" secondItem="Zaa-J2-fcM" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="KaE-gV-ych"/>
+                            <constraint firstItem="0YC-KC-7qA" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Sqj-fw-nO7"/>
+                            <constraint firstItem="zEY-1F-k1d" firstAttribute="top" secondItem="0YC-KC-7qA" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="YVc-19-fqu"/>
+                            <constraint firstItem="dla-hr-1u0" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="YbQ-By-TGG"/>
+                            <constraint firstItem="Zaa-J2-fcM" firstAttribute="top" secondItem="YLZ-7K-aYT" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="azc-bx-dWP"/>
+                            <constraint firstItem="NNt-rp-H2C" firstAttribute="centerX" secondItem="VIZ-R3-YTK" secondAttribute="centerX" type="default" id="cKC-YF-4cm"/>
+                            <constraint firstItem="dla-hr-1u0" firstAttribute="top" secondItem="3" secondAttribute="top" constant="48" id="esC-37-ijA"/>
+                            <constraint firstItem="YLZ-7K-aYT" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="y3w-YW-eep"/>
+                            <constraint firstItem="VIZ-R3-YTK" firstAttribute="top" secondItem="zEY-1F-k1d" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="yTH-Rt-Itn"/>
+                            <constraint firstAttribute="trailing" secondItem="VIZ-R3-YTK" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="zE3-ei-XW8"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="pitch" destination="0YC-KC-7qA" id="6Nz-e8-fw9"/>
+                        <outlet property="roll" destination="YLZ-7K-aYT" id="CoN-kC-ex1"/>
+                        <outlet property="spinLabel" destination="NNt-rp-H2C" id="HSE-nk-K2K"/>
+                        <outlet property="yaw" destination="VIZ-R3-YTK" id="HPN-nH-bYZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <classes>
+        <class className="FlipViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FlipViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="pitch" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="roll" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="yaw" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

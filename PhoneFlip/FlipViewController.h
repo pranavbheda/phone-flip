@@ -7,7 +7,22 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreMotion/CoreMotion.h>
 
-@interface FlipViewController : UIViewController
+@interface FlipViewController : UIViewController {
+    CMMotionManager *motionManager;
+}
+
+@property (weak, nonatomic) IBOutlet UILabel *roll;
+@property (weak, nonatomic) IBOutlet UILabel *pitch;
+@property (weak, nonatomic) IBOutlet UILabel *yaw;
+@property (weak, nonatomic) IBOutlet UILabel *spinLabel;
+
+@property (weak, nonatomic) NSMutableArray *motionHistory;
+
+@property (readonly) CMMotionManager *motionManager;
+- (CMMotionManager *)motionManager;
+
+- (void)detectFlips;
 
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46DDC28416FAE99600BFEAC6 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46DDC28316FAE99600BFEAC6 /* CoreMotion.framework */; };
 		81C9A46C16F6BFA9001ACB58 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81C9A46B16F6BFA9001ACB58 /* UIKit.framework */; };
 		81C9A46E16F6BFA9001ACB58 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81C9A46D16F6BFA9001ACB58 /* Foundation.framework */; };
 		81C9A47016F6BFA9001ACB58 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81C9A46F16F6BFA9001ACB58 /* CoreGraphics.framework */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		46DDC28316FAE99600BFEAC6 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		81C9A46816F6BFA9001ACB58 /* PhoneFlip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhoneFlip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81C9A46B16F6BFA9001ACB58 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		81C9A46D16F6BFA9001ACB58 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -44,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46DDC28416FAE99600BFEAC6 /* CoreMotion.framework in Frameworks */,
 				81C9A46C16F6BFA9001ACB58 /* UIKit.framework in Frameworks */,
 				81C9A46E16F6BFA9001ACB58 /* Foundation.framework in Frameworks */,
 				81C9A47016F6BFA9001ACB58 /* CoreGraphics.framework in Frameworks */,
@@ -56,6 +59,7 @@
 		81C9A45F16F6BFA9001ACB58 = {
 			isa = PBXGroup;
 			children = (
+				46DDC28316FAE99600BFEAC6 /* CoreMotion.framework */,
 				81C9A47116F6BFA9001ACB58 /* PhoneFlip */,
 				81C9A46A16F6BFA9001ACB58 /* Frameworks */,
 				81C9A46916F6BFA9001ACB58 /* Products */,
@@ -227,7 +231,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -251,7 +255,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -299,6 +303,7 @@
 				81C9A48D16F6BFA9001ACB58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
