@@ -1,32 +1,28 @@
 //
-//  MenuViewController.m
+//  SettingViewController.m
 //  PhoneFlip
 //
-//  Created by Pranav on 3/21/13.
+//  Created by Pranav on 3/25/13.
 //  Copyright (c) 2013 goa. All rights reserved.
 //
 
-#import "MenuViewController.h"
+#import "SettingViewController.h"
 #import <QuartzCore/QuartzCore.h>
 #import <UIKit/UIKit.h>
-#import "GameViewController.h"
 
-@interface MenuViewController ()
+
+@interface SettingViewController ()
 
 @end
 
-
-@implementation MenuViewController
-@synthesize playMenuButton, scoresMenuButton, optionsMenuButton;
-
+@implementation SettingViewController
+@synthesize resetButton;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-
+        // Custom initialization
     }
-
-    
     return self;
 }
 
@@ -34,11 +30,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    
-    [self editButtons: self.playMenuButton];
-    [self editButtons: self.scoresMenuButton];
-    [self editButtons: self.optionsMenuButton];
-    
+    [self editButtons: self.resetButton];
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -47,11 +40,6 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void) viewDidLayoutSubviews
-{
-    [super viewDidLayoutSubviews];
-
-}
 
 //Edit the buttons
 -(void)editButtons: (UIButton *) button
@@ -75,7 +63,6 @@
     // Set button colors for different states
     [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [button setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];
-
 }
 
 

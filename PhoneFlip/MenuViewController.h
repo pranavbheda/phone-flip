@@ -9,8 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface MenuViewController : UIViewController
+{
+    MenuViewController *menu;
+}
+
 @property (strong, nonatomic) IBOutlet UIButton *playMenuButton;
 @property (strong, nonatomic) IBOutlet UIButton *scoresMenuButton;
 @property (strong, nonatomic) IBOutlet UIButton *optionsMenuButton;
+
 
 @end
