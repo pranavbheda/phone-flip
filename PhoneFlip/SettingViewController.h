@@ -11,5 +11,6 @@
 @interface SettingViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UISegmentedControl *musicSwitch;
 @property (strong, nonatomic) IBOutlet UIButton *resetButton;
+@property (strong, nonatomic) IBOutlet UIButton *menuButton;
 
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8132D8251705ECE000AD31C4 /* ScoresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8132D8241705ECE000AD31C4 /* ScoresViewController.m */; };
 		81444BE716FA205000ADA215 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 81444BE616FA205000ADA215 /* Logo.png */; };
 		81444BE916FA209200ADA215 /* LogoSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 81444BE816FA209200ADA215 /* LogoSmall.png */; };
 		814E9CD016F7692900E1F63D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 814E9CCE16F7692900E1F63D /* MainStoryboard.storyboard */; };
@@ -30,6 +31,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8132D8231705ECE000AD31C4 /* ScoresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoresViewController.h; sourceTree = "<group>"; };
+		8132D8241705ECE000AD31C4 /* ScoresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoresViewController.m; sourceTree = "<group>"; };
 		81444BE616FA205000ADA215 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Logo.png; path = ../Logo.png; sourceTree = "<group>"; };
 		81444BE816FA209200ADA215 /* LogoSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LogoSmall.png; path = ../LogoSmall.png; sourceTree = "<group>"; };
 		814E9CCF16F7692900E1F63D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
@@ -131,6 +134,8 @@
 				81863FC316FCDBF600255E4D /* GameViewController.m */,
 				8178A4EA1700D3F500EAB964 /* SettingViewController.h */,
 				8178A4EB1700D3F500EAB964 /* SettingViewController.m */,
+				8132D8231705ECE000AD31C4 /* ScoresViewController.h */,
+				8132D8241705ECE000AD31C4 /* ScoresViewController.m */,
 				81C9A47216F6BFA9001ACB58 /* Supporting Files */,
 			);
 			path = PhoneFlip;
@@ -227,6 +232,7 @@
 				819B766C16FB867A0031F215 /* MenuViewController.m in Sources */,
 				81863FC416FCDBF600255E4D /* GameViewController.m in Sources */,
 				8178A4EC1700D3F500EAB964 /* SettingViewController.m in Sources */,
+				8132D8251705ECE000AD31C4 /* ScoresViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

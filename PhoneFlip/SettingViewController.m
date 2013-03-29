@@ -12,11 +12,10 @@
 
 
 @interface SettingViewController ()
-
 @end
 
 @implementation SettingViewController
-@synthesize resetButton;
+@synthesize resetButton, menuButton;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -31,6 +30,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     [self editButtons: self.resetButton];
+    [self editButtons: self.menuButton];
+
 
 }
 
@@ -41,10 +42,8 @@
 }
 
 
-//Edit the buttons
--(void)editButtons: (UIButton *) button
+-(void)editButtons: (UIButton *) button;
 {
-    
     // Set the button Background Color to clear
     [button setBackgroundColor:[UIColor blackColor]];
     
@@ -64,6 +63,5 @@
     [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [button setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];
 }
-
 
 @end
