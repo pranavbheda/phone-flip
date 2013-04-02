@@ -11,9 +11,6 @@
 #import <UIKit/UIKit.h>
 
 
-@interface MenuViewController ()
-@end
-
 
 @implementation MenuViewController
 @synthesize playMenuButton, scoresMenuButton, optionsMenuButton, menuView;

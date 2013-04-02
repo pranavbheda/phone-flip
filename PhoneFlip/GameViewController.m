@@ -10,6 +10,8 @@
 #import <QuartzCore/QuartzCore.h>
 #import <UIKit/UIKit.h>
 
+#import <Twitter/Twitter.h>
+#import <Accounts/Accounts.h>
 
 @implementation GameViewController 
 @synthesize backButton, goButton, shareToFacebook, shareToTwitter, navigationBar;
@@ -64,9 +66,7 @@
     [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [button setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];
 }
-
-
-
+                                                           
 
 
 @end

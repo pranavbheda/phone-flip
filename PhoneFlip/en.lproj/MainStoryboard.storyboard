@@ -295,7 +295,7 @@
                                     <constraint firstAttribute="width" constant="70" id="DVl-tP-p7b"/>
                                     <constraint firstAttribute="height" constant="35" id="zI1-jW-viF"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                 <state key="normal" title="Menu">
                                     <color key="titleColor" red="0.99830399354165078" green="0.97865391505940236" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -319,9 +319,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="pdP-3J-6W7" firstAttribute="top" secondItem="YVK-gk-TQn" secondAttribute="top" constant="21" id="4QI-vi-kmR"/>
                             <constraint firstItem="pdP-3J-6W7" firstAttribute="leading" secondItem="YVK-gk-TQn" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Hii-Sm-CUd"/>
                             <constraint firstItem="iqe-hu-xOY" firstAttribute="leading" secondItem="YVK-gk-TQn" secondAttribute="leading" type="default" id="OWB-Rd-KqP"/>
+                            <constraint firstItem="pdP-3J-6W7" firstAttribute="top" secondItem="YVK-gk-TQn" secondAttribute="top" constant="20" symbolic="YES" type="default" id="ZTs-p6-luA"/>
                             <constraint firstAttribute="trailing" secondItem="RSJ-W4-Z6N" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="cSF-Cr-ieh"/>
                             <constraint firstItem="iqe-hu-xOY" firstAttribute="top" secondItem="YVK-gk-TQn" secondAttribute="top" type="default" id="nLz-in-DxU"/>
                             <constraint firstItem="RSJ-W4-Z6N" firstAttribute="top" secondItem="YVK-gk-TQn" secondAttribute="top" constant="81" id="uQn-pc-61F"/>
@@ -434,6 +434,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="tweet:" destination="X3a-wZ-Syu" eventType="touchUpInside" id="DHu-f8-OdC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p9F-Fc-MBp">
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -535,6 +538,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="fZH-Mn-aF1"/>
+        <segue reference="xzL-F1-hbw"/>
     </inferredMetricsTieBreakers>
 </document>
