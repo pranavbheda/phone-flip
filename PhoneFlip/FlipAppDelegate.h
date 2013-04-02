@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreMotion/CoreMotion.h>
 
-@interface FlipAppDelegate : UIResponder <UIApplicationDelegate>
+@interface FlipAppDelegate : UIResponder <UIApplicationDelegate> {
+
+}
 
 @property (strong, nonatomic) UIWindow *window;
 

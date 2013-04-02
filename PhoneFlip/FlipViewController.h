@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreMotion/CoreMotion.h>
 
-@interface FlipViewController : UIViewController
+@interface FlipViewController : UIViewController {
+    CMMotionManager *motionManager;
+}
 
 
 @end
