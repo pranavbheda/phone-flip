@@ -34,7 +34,8 @@
     [self editButtons: self.playMenuButton];
     [self editButtons: self.scoresMenuButton];
     [self editButtons: self.optionsMenuButton];
-    
+    NSLog(@"Buttons are initliazed");
+
 }
 
 - (void)didReceiveMemoryWarning

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <CoreMotion/CoreMotion.h>
+//#import <CoreMotion/CoreMotion.h>
 
 @interface FlipAppDelegate : UIResponder <UIApplicationDelegate> {
 

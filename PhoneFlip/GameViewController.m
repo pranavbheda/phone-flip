@@ -45,7 +45,7 @@
 
 
 //Edit the buttons
--(void)editButton: (UIButton *)button: (float)fontSize
+-(void)editButton: (UIButton *)button : (float)fontSize
 {
     // Set the button Background Color to clear
     [button setBackgroundColor:[UIColor blackColor]];

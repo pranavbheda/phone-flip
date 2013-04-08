@@ -9,17 +9,16 @@
 #import "ScoresViewController.h"
 #import <QuartzCore/QuartzCore.h>
 #import <UIKit/UIKit.h>
+#import "Player.h"
 
 @interface ScoresViewController ()
-
-@property (weak, nonatomic) NSMutableArray *names;
-@property (weak, nonatomic) NSMutableArray *scores;
-
 @end
 
+@interface Player()
+@end
 
 @implementation ScoresViewController
-@synthesize menuButton, scoresTextView;
+@synthesize menuButton, scoresTextView, scores, scoreData;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -35,7 +34,12 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     [self editButtons: self.menuButton];
+    NSLog(@"Buttons are initliazed");
+ 
+    NSLog(@"------------------------------");
+    [self firstInit];
     [self initializeScores: self.scoresTextView];
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -70,14 +74,65 @@
 
 
 
+
+
+
+
+
 -(void) initializeScores:(UITextView *) textView;
 {
-
-    
-    
     [textView setFont:[UIFont fontWithName:@"Arial" size:20.0f]];
-    textView.text =     @" Player \t\t\t Score \n"
-                        @" Pranav \t 10 \n";
+    textView.text =     @" Name \t\t\t Score";
+    
+
+    for(int index = 0; index < [scores count]; index ++)
+    {
+        Player *temp = [scores objectAtIndex: index];
+        [textView setText:[NSString stringWithFormat:@"%@ \n %@ \t\t\t %d", textView.text, [temp name], [temp score]]];
+        
+    }
 }
+
+
+-(void) firstInit
+{
+    scores = [NSMutableArray arrayWithObjects: nil];
+    for(int index = 0; index < 10; index ++)
+    {
+        Player *player = [[Player alloc] init];
+        NSString *tempName = @"Player";
+        [player setName: tempName];
+        player.score = (index + 1);
+        [scores addObject: player];
+    }
+    
+    
+    [scores writeToFile:@"Data.plist" atomically:YES];
+}
+
+- (void)viewDidUnload {
+    [self setGameData:nil];
+    [super viewDidUnload];
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @end

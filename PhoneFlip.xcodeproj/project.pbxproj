@@ -28,6 +28,8 @@
 		81C9A48016F6BFA9001ACB58 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 81C9A47F16F6BFA9001ACB58 /* Default@2x.png */; };
 		81C9A48216F6BFA9001ACB58 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 81C9A48116F6BFA9001ACB58 /* Default-568h@2x.png */; };
 		81C9A48816F6BFA9001ACB58 /* FlipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C9A48716F6BFA9001ACB58 /* FlipViewController.m */; };
+		81EDC06417122FBA009D5498 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 81EDC06317122FBA009D5498 /* Player.m */; };
+		81EDC06617123ACA009D5498 /* Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 81EDC06517123ACA009D5498 /* Data.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +63,9 @@
 		81C9A48116F6BFA9001ACB58 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		81C9A48616F6BFA9001ACB58 /* FlipViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlipViewController.h; sourceTree = "<group>"; };
 		81C9A48716F6BFA9001ACB58 /* FlipViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipViewController.m; sourceTree = "<group>"; };
+		81EDC06217122FBA009D5498 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Player.h; path = ../Player.h; sourceTree = "<group>"; };
+		81EDC06317122FBA009D5498 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Player.m; path = ../Player.m; sourceTree = "<group>"; };
+		81EDC06517123ACA009D5498 /* Data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Data.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +73,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46DDC28416FAE99600BFEAC6 /* CoreMotion.framework in Frameworks */,
 				81C9A46C16F6BFA9001ACB58 /* UIKit.framework in Frameworks */,
 				81C9A46E16F6BFA9001ACB58 /* Foundation.framework in Frameworks */,
 				81C9A47016F6BFA9001ACB58 /* CoreGraphics.framework in Frameworks */,
@@ -97,7 +101,6 @@
 		81C9A45F16F6BFA9001ACB58 = {
 			isa = PBXGroup;
 			children = (
-				46DDC28316FAE99600BFEAC6 /* CoreMotion.framework */,
 				81C9A47116F6BFA9001ACB58 /* PhoneFlip */,
 				81C9A46A16F6BFA9001ACB58 /* Frameworks */,
 				81C9A46916F6BFA9001ACB58 /* Products */,
@@ -138,6 +141,9 @@
 				8178A4EB1700D3F500EAB964 /* SettingViewController.m */,
 				8132D8231705ECE000AD31C4 /* ScoresViewController.h */,
 				8132D8241705ECE000AD31C4 /* ScoresViewController.m */,
+				81EDC06217122FBA009D5498 /* Player.h */,
+				81EDC06317122FBA009D5498 /* Player.m */,
+				81EDC06517123ACA009D5498 /* Data.plist */,
 				81C9A47216F6BFA9001ACB58 /* Supporting Files */,
 			);
 			path = PhoneFlip;
@@ -218,6 +224,7 @@
 				818654BE16FE949A00C4B008 /* MenuPic.png in Resources */,
 				8178A4E71700D19000EAB964 /* Background V4.png in Resources */,
 				8178A4E91700D35400EAB964 /* Background V4 Non Menu.png in Resources */,
+				81EDC06617123ACA009D5498 /* Data.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +242,7 @@
 				81863FC416FCDBF600255E4D /* GameViewController.m in Sources */,
 				8178A4EC1700D3F500EAB964 /* SettingViewController.m in Sources */,
 				8132D8251705ECE000AD31C4 /* ScoresViewController.m in Sources */,
+				81EDC06417122FBA009D5498 /* Player.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

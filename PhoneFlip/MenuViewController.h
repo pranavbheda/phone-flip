@@ -13,7 +13,7 @@
 }
 
 @property (nonatomic, retain) IBOutlet UINavigationController *navController;
-- (IBAction)goToGameView:(id)sender;
+//- (IBAction)goToGameView:(id)sender;
 
 //@property (nonatomic, retain) GameViewController *gameView;
 

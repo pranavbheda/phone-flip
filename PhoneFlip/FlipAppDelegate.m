@@ -7,6 +7,7 @@
 //
 
 #import "FlipAppDelegate.h"
+#import <CoreMotion/CoreMotion.h>
 
 @implementation FlipAppDelegate
 

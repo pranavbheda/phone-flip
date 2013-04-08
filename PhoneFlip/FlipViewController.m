@@ -13,7 +13,7 @@
 @end
 
 @implementation FlipViewController
-
+/**
 @synthesize motionHistory;
 
 - (CMMotionManager *)motionManager
@@ -36,11 +36,11 @@
         });
     }];
 }
-
+*/
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-	[self detectFlips];
+    //    [super viewDidLoad];
+    //	[self detectFlips];
 }
 
 - (void)didReceiveMemoryWarning
@@ -50,7 +50,8 @@
 }
 
 - (void)viewDidUnload {
-    [self setSpinLabel:nil];
+    //    [self setSpinLabel:nil];
     [super viewDidUnload];
 }
+
 @end
