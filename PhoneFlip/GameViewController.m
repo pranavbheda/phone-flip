@@ -67,6 +67,17 @@
     [button setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];
 }
                                                            
+- (CMMotionManager *)motionManager
+{
+    if(!motionManager)
+        motionManager = [[CMMotionManager alloc] init];
+    return motionManager;
+}
+
+- (IBAction)beginGame:(id)sender {
+    NSLog(@"Game is beginning!");
+    
 
 
+}
 @end

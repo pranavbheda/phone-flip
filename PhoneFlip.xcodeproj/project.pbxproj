@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46EA8AE01713E9050067BC74 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46EA8ADF1713E9050067BC74 /* CoreMotion.framework */; };
 		8132D8251705ECE000AD31C4 /* ScoresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8132D8241705ECE000AD31C4 /* ScoresViewController.m */; };
 		81444BE716FA205000ADA215 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 81444BE616FA205000ADA215 /* Logo.png */; };
 		81444BE916FA209200ADA215 /* LogoSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 81444BE816FA209200ADA215 /* LogoSmall.png */; };
@@ -27,12 +28,12 @@
 		81C9A47E16F6BFA9001ACB58 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 81C9A47D16F6BFA9001ACB58 /* Default.png */; };
 		81C9A48016F6BFA9001ACB58 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 81C9A47F16F6BFA9001ACB58 /* Default@2x.png */; };
 		81C9A48216F6BFA9001ACB58 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 81C9A48116F6BFA9001ACB58 /* Default-568h@2x.png */; };
-		81C9A48816F6BFA9001ACB58 /* FlipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C9A48716F6BFA9001ACB58 /* FlipViewController.m */; };
 		81EDC06417122FBA009D5498 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 81EDC06317122FBA009D5498 /* Player.m */; };
 		81EDC06617123ACA009D5498 /* Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 81EDC06517123ACA009D5498 /* Data.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		46EA8ADF1713E9050067BC74 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		8132D8231705ECE000AD31C4 /* ScoresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoresViewController.h; sourceTree = "<group>"; };
 		8132D8241705ECE000AD31C4 /* ScoresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoresViewController.m; sourceTree = "<group>"; };
 		81444BE616FA205000ADA215 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Logo.png; path = ../Logo.png; sourceTree = "<group>"; };
@@ -61,8 +62,6 @@
 		81C9A47D16F6BFA9001ACB58 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		81C9A47F16F6BFA9001ACB58 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		81C9A48116F6BFA9001ACB58 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		81C9A48616F6BFA9001ACB58 /* FlipViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlipViewController.h; sourceTree = "<group>"; };
-		81C9A48716F6BFA9001ACB58 /* FlipViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipViewController.m; sourceTree = "<group>"; };
 		81EDC06217122FBA009D5498 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Player.h; path = ../Player.h; sourceTree = "<group>"; };
 		81EDC06317122FBA009D5498 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Player.m; path = ../Player.m; sourceTree = "<group>"; };
 		81EDC06517123ACA009D5498 /* Data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Data.plist; sourceTree = "<group>"; };
@@ -73,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46EA8AE01713E9050067BC74 /* CoreMotion.framework in Frameworks */,
 				81C9A46C16F6BFA9001ACB58 /* UIKit.framework in Frameworks */,
 				81C9A46E16F6BFA9001ACB58 /* Foundation.framework in Frameworks */,
 				81C9A47016F6BFA9001ACB58 /* CoreGraphics.framework in Frameworks */,
@@ -101,6 +101,7 @@
 		81C9A45F16F6BFA9001ACB58 = {
 			isa = PBXGroup;
 			children = (
+				46EA8ADF1713E9050067BC74 /* CoreMotion.framework */,
 				81C9A47116F6BFA9001ACB58 /* PhoneFlip */,
 				81C9A46A16F6BFA9001ACB58 /* Frameworks */,
 				81C9A46916F6BFA9001ACB58 /* Products */,
@@ -131,8 +132,6 @@
 				81C9A47A16F6BFA9001ACB58 /* FlipAppDelegate.h */,
 				81C9A47B16F6BFA9001ACB58 /* FlipAppDelegate.m */,
 				814E9CCE16F7692900E1F63D /* MainStoryboard.storyboard */,
-				81C9A48616F6BFA9001ACB58 /* FlipViewController.h */,
-				81C9A48716F6BFA9001ACB58 /* FlipViewController.m */,
 				819B766A16FB867A0031F215 /* MenuViewController.h */,
 				819B766B16FB867A0031F215 /* MenuViewController.m */,
 				81863FC216FCDBF600255E4D /* GameViewController.h */,
@@ -237,7 +236,6 @@
 			files = (
 				81C9A47816F6BFA9001ACB58 /* main.m in Sources */,
 				81C9A47C16F6BFA9001ACB58 /* FlipAppDelegate.m in Sources */,
-				81C9A48816F6BFA9001ACB58 /* FlipViewController.m in Sources */,
 				819B766C16FB867A0031F215 /* MenuViewController.m in Sources */,
 				81863FC416FCDBF600255E4D /* GameViewController.m in Sources */,
 				8178A4EC1700D3F500EAB964 /* SettingViewController.m in Sources */,
