@@ -79,20 +79,16 @@
     
     __block NSDate *startTime;
     
-    __block float totalYawChange = 0;
-    __block float flips = 0;
+    __block double totalYawChange = 0;
+    __block double flips = 0;
     
-    __block float previousRoll = 0;
-    __block float previousPitch = 0;
-    __block float previousYaw = 0;
+    __block double previousRoll = 0;
+    __block double previousPitch = 0;
+    __block double previousYaw = 0;
     __block BOOL started = NO;
     
     [[self motionManager] startDeviceMotionUpdatesToQueue:[[NSOperationQueue alloc] init] withHandler:^(CMDeviceMotion *data, NSError *error) {
-        dispatch_async(dispatch_get_main_queue(), ^{
-//            NSLog(@"%@", [NSString stringWithFormat:@"Roll %f", data.attitude.roll]);
-//            NSLog(@"%@", [NSString stringWithFormat:@"Pitch %f", data.attitude.pitch]);
-//            NSLog(@"%@", [NSString stringWithFormat:@"Yaw %f", data.attitude.yaw]);
-            
+        dispatch_async(dispatch_get_main_queue(), ^{   
             if (!started) {
                 previousRoll = data.attitude.roll;
                 previousPitch = data.attitude.pitch;
@@ -101,10 +97,14 @@
                 started = YES;
             }
             else {
-                totalYawChange += fabsf(data.attitude.yaw - previousYaw);
+                totalYawChange += fabs(data.attitude.yaw - previousYaw);
                 previousYaw = data.attitude.yaw;
                 flips = floor(totalYawChange/12);
+                
+                int timeElapsed = -1 * (int)[startTime timeIntervalSinceNow];
+                
                 self.rotationCount.text = [[NSString alloc] initWithFormat:@"%d", (int)flips];
+                self.timeLabel.text = [[NSString alloc] initWithFormat:@"00:%02d", timeElapsed];
             }
         });
     }];
