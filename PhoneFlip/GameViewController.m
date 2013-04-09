@@ -77,7 +77,35 @@
 - (IBAction)beginGame:(id)sender {
     NSLog(@"Game is beginning!");
     
-
+    __block float totalRollChange = 0;
+    __block float flips = 0;
+    
+    __block float previousRoll = 0;
+    __block float previousPitch = 0;
+    __block float previousYaw = 0;
+    __block BOOL started = NO;
+    
+    [[self motionManager] startDeviceMotionUpdatesToQueue:[[NSOperationQueue alloc] init] withHandler:^(CMDeviceMotion *data, NSError *error) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+//            NSLog(@"%@", [NSString stringWithFormat:@"Roll %f", data.attitude.roll]);
+//            NSLog(@"%@", [NSString stringWithFormat:@"Pitch %f", data.attitude.pitch]);
+//            NSLog(@"%@", [NSString stringWithFormat:@"Yaw %f", data.attitude.yaw]);
+            
+            if (!started) {
+                previousRoll = data.attitude.roll;
+                previousPitch = data.attitude.pitch;
+                previousYaw = data.attitude.yaw;
+                started = YES;
+            }
+            else {
+                totalRollChange += fabsf(data.attitude.roll - previousRoll);
+                previousRoll = data.attitude.roll;
+            }
+            
+            flips = floor(10 * totalRollChange/12)/10;
+            NSLog(@"Flips: %f", flips);
+        });
+    }];
 
 }
 @end
