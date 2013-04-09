@@ -77,7 +77,9 @@
 - (IBAction)beginGame:(id)sender {
     NSLog(@"Game is beginning!");
     
-    __block float totalRollChange = 0;
+    __block NSDate *startTime;
+    
+    __block float totalYawChange = 0;
     __block float flips = 0;
     
     __block float previousRoll = 0;
@@ -95,17 +97,22 @@
                 previousRoll = data.attitude.roll;
                 previousPitch = data.attitude.pitch;
                 previousYaw = data.attitude.yaw;
+                startTime = [NSDate date];
                 started = YES;
             }
             else {
-                totalRollChange += fabsf(data.attitude.roll - previousRoll);
-                previousRoll = data.attitude.roll;
+                totalYawChange += fabsf(data.attitude.yaw - previousYaw);
+                previousYaw = data.attitude.yaw;
+                flips = floor(totalYawChange/12);
+                self.rotationCount.text = [[NSString alloc] initWithFormat:@"%d", (int)flips];
             }
-            
-            flips = floor(10 * totalRollChange/12)/10;
-            NSLog(@"Flips: %f", flips);
         });
     }];
 
+}
+- (void)viewDidUnload {
+    [self setRotationCount:nil];
+    [self setTimeLabel:nil];
+    [super viewDidUnload];
 }
 @end

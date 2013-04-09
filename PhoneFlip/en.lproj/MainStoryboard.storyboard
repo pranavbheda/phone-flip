@@ -405,7 +405,6 @@
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yOv-YJ-fjc">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="56" id="SvH-fp-J1W"/>
                                     <constraint firstAttribute="height" constant="51" id="pyY-LJ-rxv"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="58"/>
@@ -465,23 +464,24 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="U0S-bs-pY7" firstAttribute="centerX" secondItem="pqT-Zn-etH" secondAttribute="centerX" type="default" id="2uW-yz-o3p"/>
+                            <constraint firstItem="8Ct-We-hM9" firstAttribute="centerX" secondItem="yOv-YJ-fjc" secondAttribute="centerX" type="default" id="8Mn-Q3-jwS"/>
                             <constraint firstAttribute="bottom" secondItem="tBB-7v-M6e" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="AQ5-ir-UYT"/>
                             <constraint firstItem="U0S-bs-pY7" firstAttribute="top" secondItem="pqT-Zn-etH" secondAttribute="top" constant="78" id="B4M-Fm-BMc"/>
                             <constraint firstAttribute="bottom" secondItem="QTA-LP-uZc" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="Bcc-Lk-isz"/>
                             <constraint firstItem="SKm-Pj-891" firstAttribute="centerX" secondItem="JDf-RM-yaf" secondAttribute="centerX" type="default" id="DCC-h3-7F2"/>
                             <constraint firstAttribute="bottom" secondItem="8Ct-We-hM9" secondAttribute="bottom" constant="136" id="LR9-zl-vRG"/>
                             <constraint firstItem="Tla-HW-A3G" firstAttribute="centerY" secondItem="pqT-Zn-etH" secondAttribute="centerY" type="default" id="Mop-9H-WeF"/>
+                            <constraint firstItem="yOv-YJ-fjc" firstAttribute="trailing" secondItem="JDf-RM-yaf" secondAttribute="trailing" type="default" id="O1W-7J-4Th"/>
                             <constraint firstItem="U0S-bs-pY7" firstAttribute="trailing" secondItem="tBB-7v-M6e" secondAttribute="trailing" type="default" id="PQ9-Vd-TcQ"/>
                             <constraint firstItem="U0S-bs-pY7" firstAttribute="leading" secondItem="QTA-LP-uZc" secondAttribute="leading" type="default" id="PkV-0r-IuP"/>
-                            <constraint firstItem="8Ct-We-hM9" firstAttribute="centerX" secondItem="yOv-YJ-fjc" secondAttribute="centerX" type="default" id="SdW-s2-Y9X"/>
                             <constraint firstItem="U0S-bs-pY7" firstAttribute="centerX" secondItem="Tla-HW-A3G" secondAttribute="centerX" type="default" id="Tzt-DY-OiX"/>
                             <constraint firstItem="SKm-Pj-891" firstAttribute="centerX" secondItem="U0S-bs-pY7" secondAttribute="centerX" type="default" id="WTv-2o-3oc"/>
                             <constraint firstItem="p9F-Fc-MBp" firstAttribute="top" secondItem="pqT-Zn-etH" secondAttribute="top" constant="21" id="dop-4Y-WI3"/>
                             <constraint firstItem="JDf-RM-yaf" firstAttribute="top" secondItem="pqT-Zn-etH" secondAttribute="top" constant="168" id="eNG-CA-qoi"/>
                             <constraint firstItem="tBB-7v-M6e" firstAttribute="top" secondItem="QTA-LP-uZc" secondAttribute="top" type="default" id="h1F-do-VYL"/>
-                            <constraint firstItem="8Ct-We-hM9" firstAttribute="centerX" secondItem="JDf-RM-yaf" secondAttribute="centerX" type="default" id="hBb-ld-IZ5"/>
+                            <constraint firstItem="JDf-RM-yaf" firstAttribute="centerX" secondItem="pqT-Zn-etH" secondAttribute="centerX" type="default" id="q9F-aq-9nZ"/>
                             <constraint firstItem="p9F-Fc-MBp" firstAttribute="leading" secondItem="pqT-Zn-etH" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="rb8-Mx-aZc"/>
+                            <constraint firstItem="yOv-YJ-fjc" firstAttribute="leading" secondItem="JDf-RM-yaf" secondAttribute="leading" type="default" id="voT-u2-wVp"/>
                             <constraint firstItem="SKm-Pj-891" firstAttribute="top" secondItem="U0S-bs-pY7" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="zS4-BQ-hjP"/>
                             <constraint firstAttribute="bottom" secondItem="yOv-YJ-fjc" secondAttribute="bottom" constant="90" id="zsF-Xk-qWV"/>
                         </constraints>
@@ -498,8 +498,10 @@
                         <outlet property="backButton" destination="p9F-Fc-MBp" id="PXy-Ba-ZM0"/>
                         <outlet property="goButton" destination="U0S-bs-pY7" id="6CZ-jo-II6"/>
                         <outlet property="navigationBar" destination="qRz-A1-oda" id="evD-8e-b6e"/>
+                        <outlet property="rotationCount" destination="yOv-YJ-fjc" id="kRZ-ah-km4"/>
                         <outlet property="shareToFacebook" destination="QTA-LP-uZc" id="CPz-yG-10R"/>
                         <outlet property="shareToTwitter" destination="tBB-7v-M6e" id="8Ne-j8-KV0"/>
+                        <outlet property="timeLabel" destination="JDf-RM-yaf" id="Nsm-4K-Nqq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sjQ-Bu-hbY" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -546,8 +548,10 @@
                 <relationship kind="outlet" name="backButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="goButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="navigationBar" candidateClass="UINavigationItem"/>
+                <relationship kind="outlet" name="rotationCount" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="shareToFacebook" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="shareToTwitter" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="timeLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="MenuViewController" superclassName="UIViewController">

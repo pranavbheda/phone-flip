@@ -23,6 +23,8 @@
 @property (strong, nonatomic) IBOutlet UIButton *shareToFacebook;
 @property (strong, nonatomic) IBOutlet UIButton *shareToTwitter;
 @property (strong, nonatomic) IBOutlet UINavigationItem *navigationBar;
+@property (weak, nonatomic) IBOutlet UILabel *rotationCount;
+@property (weak, nonatomic) IBOutlet UILabel *timeLabel;
 
 @property (readonly) CMMotionManager *motionManager;
 - (CMMotionManager *)motionManager;
